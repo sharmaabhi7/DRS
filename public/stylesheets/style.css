@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    justify-items: center;
+    align-items: center;
+    background-color: #081B29;
+}
+.login{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    margin-top: 80px;
+    border: 2px solid #0ef;
+    width: 400px;
+    height: 600px;
+}
+input{
+    width: 300px;
+}
+.diet{
+    padding-bottom: 130px;
+    padding-top: 10px;
+}
+.btn{
+    background-color: #0ef;
+    color: black;
+    margin-top: 40px;
+    border: 2px solid #0ef;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+.btn:hover{
+    box-shadow: 0 0 5px #0ef,0 0 25px #0ef;
+}

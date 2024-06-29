@@ -1,0 +1,60 @@
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 560px;
+}
+.menu li:hover{
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.login{
+    margin-left: 450px;
+    background-color: aqua;
+    padding: 2px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.login:hover{
+    background-color: rgb(30, 170, 170);
+}
+.scrool{
+    height: 688px;
+    width: 1519px;
+}
+.page2{
+    height: 750px;
+    width: 1519px;
+    background-color: rgb(47, 45, 45);
+
+}
+.side1{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(50, 69, 191);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+marquee{
+    font-size: 150px;
+    background-color: rgb(200, 245, 0);
+    color: white;
+}
+.footer{
+    height: 100px;
+    background-color: grey;
+    text-align: center;
+    font-size: 40px;
+}
+.img2{
+    height: 800px;
+    width: 1519px;
+}
