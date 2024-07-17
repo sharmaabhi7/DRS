@@ -3,27 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Diet Mangement System - Login</title>
+    <title>Responsive Login Page</title>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
-<body class="text-white">
-    <form action="/register" method="post">
-        <div class="login">
-            <h1 class="diet text-3xl text-center font-bold">Diet Mangement System</h1>
-            <h1 class="text-3xl font-bold text-center">Register Here</h1>
-            <div class="flex flex-col items-center justify-center mt-10">
-                <label for="Name" class="text-white">Name:</label>
-                <input type="text" name="name" id="name" class="name text-black">    
-                <label for="Name" class="text-white">Age:</label>
-                <input type="text" name="number" id="name" class="name text-black">   
-                <label for="email" class="text-white">Email</label>
-                <input type="email" name="email" id="email" class="email text-black">
-                <label for="password" class="text-white">Password</label>
-                <input type="password" name="password" id="password" class="password text-black">
-                <button type="submit" class="btn">Register</button>
-            </div>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <i class='bx bxs-circle-three-quarter' style="font-size: 50px; color: red; border: 1px solid black; border-radius:50% ;"></i>
+            <img src="logo.png" alt="">   
         </div>
-    </form>
+        <div class="login-section">
+            <h2>Register</h2>
+            <p>Register <span>Yourself</span> To Know Best Diet</p>
+            <form method="post" action="/register">
+                <div class="input-group">
+                    <input type="text" placeholder="Name" name="name"  required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Age" name="number"  required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="options">
+                    <!-- <label>
+                        <input type="checkbox"> Remember me
+                    </label> -->
+                    <!-- <a href="/register">Forgot Password?</a> -->
+                </div>
+                <button type="submit">Register</button>
+                <div class="social-login">
+                    <p>Login with</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-facebook' style="height: inherit; width: auto; border: 1px solid black ; color: blue;border-radius: 20px; margin-left: 15px; padding: 5px;"></i></a>
+                        <a href="#"><i class='bx bxl-google' style="height: inherit; width: auto; border: 1px solid black ; color: red; border-radius: 20px; margin-left: 15px; padding: 5px;"></i></a>
+                        <a href="#"><i class='bx bxl-twitter' style="height: inherit; width: auto; border: 1px solid black ; color: rgb(0, 191, 255); border-radius: 20px; margin-left: 15px; padding: 5px;"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">Explore</a>
+            <a href="#">What</a>
+            <a href="#">Help & Feedback</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>&copy; 2023 company. All rights and copy rights reserved</p>
+    </footer>
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/gihOKUjQzG5sFEAe/scene.splinecode"></spline-viewer> -->
 </body>
 </html>

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url(../images/login1.jpg) center no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo-section img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-section {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.login-section span {
+    color: #ff6600;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options label {
+    color: #666;
+}
+
+.options a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 111, 0);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+.social-login p {
+    margin: 20px 0 10px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a i {
+    width: 30px;
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    margin-top: -60px;
+}
+
+footer nav {
+    margin-bottom: 0px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #666;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #999;
+    font-size: 12px;
+}

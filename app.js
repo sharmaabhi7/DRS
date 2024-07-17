@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const collection = require("./models/user");
+const details = require("./models/details");
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const path = require('path');
@@ -27,10 +28,16 @@ app.get('/register', function(req, res){
 })
 
 
+app.get('/details', function(req, res){
+    res.render("details");
+})
+
+
 app.get('/user', isLogedIn, async function(req, res){
     let user = await collection.findOne({email: req.user.email});
+    let users = await details.findOne({fullname: req.users.fullname});
     console.log(user)
-    res.render("user", {user});
+    res.render("user", {user,users});
 })
 
 app.post('/register', async function(req, res){
@@ -48,7 +55,7 @@ app.post('/register', async function(req, res){
             });
             let token = jwt.sign({email: email, password: password, name: name, number: number}, "shhhhh");
             res.cookie("token", token);
-            res.redirect("/login");
+            res.redirect("/details");
         })
     })
 })
@@ -68,9 +75,29 @@ app.post('/login', async function(req, res){
     })
 })
 
+app.post('/details', async function(req, res){
+    let {fullname, number, age, weight, height, dob, gender, disease} = req.body;
+    // let user  = await details.findeOne({fullname});
+    // if(user) return res.status(500).send("User Alerady Registered");
+    let users = await details.create({
+        fullname,
+        number,
+        age,
+        weight,
+        height,
+        dob,
+        gender,
+        disease
+    });
+    let token = jwt.sign({fullname: fullname, number: number, age: age, weight: weight, height: height, dob: dob, gender: gender, disease: disease},"abhishek")
+    res.cookie("token", token);
+    res.redirect("/login");
+})
+
 
 app.get('/logout', function(req, res){
     res.cookie("token", "");
+    console.log(token)
     res.redirect("/login"); 
 })
 
@@ -82,4 +109,4 @@ function isLogedIn (req, res, next){
         next();
     }
 }
-app.listen(3000);
+app.listen(4001);

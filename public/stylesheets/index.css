@@ -1,60 +1,232 @@
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 560px;
+*{
+    margin: 0;
+    padding: 0;
 }
-.menu li:hover{
-    background-color: black;
-    color: aliceblue;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 5px;
+
+body{
+    background-color: #fefefe;
+    color: black;
+    /* background: url(/images/Food\ guide\ plate.jpg);  */
+}
+.header{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    /* background: rgb(32, 31, 31); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    align-items: left;
+    cursor: default;
+}
+.navbar a {
+    display: inline-block;
+    
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    /* font-weight: 500; */
+    margin-left: 35px;
+    padding-right: 0px;
+}
+.navbar a:hover {
+    color: rgb(255, 98, 0);
 }
 .login{
-    margin-left: 450px;
-    background-color: aqua;
+    background-color: #FAAF38;
+    /* colo */
     padding: 2px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    text-decoration: none;
+    
 }
-.login:hover{
-    background-color: rgb(30, 170, 170);
+.home{
+    position: relative;
+    width: 80%;
+    justify-content: left;
+    height: 81vh;
+    background: url(../images/main.png);
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
 }
-.scrool{
-    height: 688px;
-    width: 1519px;
-}
-.page2{
-    height: 750px;
-    width: 1519px;
-    background-color: rgb(47, 45, 45);
+
+.main{
+    font-size: 75px;
+    /* margin-top: 10px; */
+    padding-bottom: 250px;
+    padding-left: 400px;
+    font-family: jacques 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    letter-spacing: 5px;
 
 }
-.side1{
-    height: 500px;
-    width: 500px;
-    background-color: rgb(50, 69, 191);
-    align-items: center;
-    justify-content: center;
+
+.container {
+    width: 90%;
     margin: auto;
+    overflow: hidden;
+}
+
+h1 {
     text-align: center;
-    font-size: 35px;
-    color: white;
+    margin: 20px 0;
 }
-marquee{
-    font-size: 150px;
-    background-color: rgb(200, 245, 0);
-    color: white;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.footer{
-    height: 100px;
-    background-color: grey;
+
+.column {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 40px;
 }
-.img2{
-    height: 800px;
-    width: 1519px;
+
+.card img {
+    width: 260px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%;
+    }
+}
+
+.plans{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+}
+.pricing-table {
+    border: 4px solid white;
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.023); /* Light background for glass effect */
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%); /* Safari support */
+    border-radius: 80px; /* Rounded corners */
+    /* margin-left: 160px; */
+    padding: 100px;
+    box-shadow: 0 40px 80px rgb(255, 255, 255); /* Subtle shadow for depth */
+}
+.prices{
+    border: 5px solid black;
+    border-radius: 50px;
+    background: url(../images/istockphoto-1457433817-612x612.jpg) center;
+    padding: 20px;
+}
+.pricing-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h2 {
+    background: #f7a700;
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 1.5em;
+}
+
+
+.pricing-card h2:hover{
+    background-color: #e69500;
+}
+.pricing-card .price {
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.pricing-card .price span {
+    display: block;
+    font-size: 0.5em;
+    color: #888;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.pricing-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-card button {
+    background: #f7a700;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background: #ff5900;
+}
+
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
 }

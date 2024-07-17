@@ -1,49 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diet Mangement System</title>
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Recomandtion System</title>
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
-<body class="">
-    <div class="nav ">
-        <div class="flex justify-between items-center px-4 py-2 bg-gray-800 text-white">
-            <div class="flex items-center">
-                DMS
-                <div class="menu">
-                    <li class="list-none mr-9">Home</li>
-                    <li class="list-none mr-9">Diet History</li>
-                    <li class="list-none mr-9">Diet Plan</li>
-                </div>
-                <a href="/login"><button class="login">Login</button></a>
-                <a href="/register"><button class="ml-5">Register</button></a>
-            </div>
-        </div>
-    </div>
-    <img src="images/img1.jpg" alt="" class="scrool">
-    <marquee behavior="" direction="" scrollamount="50">Your Diet is Your Bank Account. Stay Healthy & Wealthy</marquee>
-    <!-- <div class="page2"> -->
-        <img src="images/img2.jpg" alt="" class="img2">
-        <div class="side1">
-            How Diet Recommendation works?
-            <ul class="" style="font-size: 30px; text-align: left; padding-left: 26px;">
-                <li>On the bases of Age</li>
-                <li>On the bases of Hieght</li>
-                <li>On the bases of Weight</li>
-                <li>On the bases of Diseases</li>
-                <li>On the bases of Activity</li>
-                <li>On the bases of Climate</li>
-                <li>On the bases of Food</li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer">
-        Give Some Details to know Your Diet.
-        <div style="font-size: 20px; text-align: right;">
-            All right Reseverd with abhi 2023
-        </div>
-    </div>
+<body>
+    <header class="header">
+      <i class='bx bxs-circle-three-quarter' style="font-size: 50px; color: red; border: 1px solid black; border-radius:50% ;"></i>
+      <i class='bx bxs-circle-three-quarter' style="font-size: 50px; color: rgb(139, 65, 45); border: 1px solid black; border-radius:50% ; margin-left: -550px;"></i>
+      <i class='bx bxs-circle-three-quarter' style="font-size: 50px; color: red; border: 1px solid black; border-radius:50% ; margin-left: -550px;"></i>
+      <nav id="tog" class="navbar">
+        <a href="#">Home</a>
+        <a href="#works">Working</a>
+        <a href="#services">Plans</a>
+        <a href="#skill">About</a>
+        <a href="#contact">Contact</a>
+        <a href="/login" class="login" style="color: black;">&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
+        <a href="/register" class="login" style="color: black;">&nbsp;&nbsp;Register&nbsp;&nbsp;</a>
+      </nav>
+    </header>
+    <hr>
+    <section class="home">
+      <section class="main">
+        <p>
+          <span style="color: red;">W</span>elcome to Diet
+          <br> Recommendation<br> System! 
+        </p>
+        <!-- A diet recommendation web application using content-based approach with Scikit-Learn, FastAPI and Streamlit. You can find more details and the whole project on my -->
+      </section>
+    </section>
+<div class="container" id="works">
+  <h1>Based On</h1>
+  <hr>
+  <div class="row">
+      <div class="column">
+          <div class="card">
+              <img src="../images/shutterstock_1690825483-1.jpg" alt="Height">
+              <h2>Height :</h2>
+              <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur officiis nobis beatae nihil ratione doloribus odit, commodi soluta, nesciunt facilis maxime esse suscipit eius voluptatum nam maiores ducimus fuga!</p>
+          </div>
+      </div>
+      <div class="column">
+          <div class="card">
+              <img src="../images/1000_F_511268147_DCU45qWLQ3MkORbw6hLapfCI0wf45R3r.jpg" alt="Age">
+              <h2>Age :</h2>
+              <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic assumenda ex suscipit, tenetur numquam, nesciunt iste quaerat deleniti voluptatibus sint asperiores labore temporibus fugiat qui explicabo quidem dolores in quia.</p>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="column">
+          <div class="card">
+              <img src="../images/beatxp-gravity-elevate-digital-weight-machine-product-images-orvx0ykqugr-p594965653-1-202211021342.webp" alt="Weight" style="height: 180px;">
+              <h2>Weight :</h2>
+              <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto expedita exercitationem cum, accusamus optio debitis ad ipsa hic eos perspiciatis alias deserunt ab fugit voluptate nemo laborum earum libero?</p>
+          </div>
+      </div>
+      <div class="column">
+          <div class="card">
+              <img src="../images/a-plate-with-good-food-a-healthy-lifestyle-and-longevity-made-with-generative-ai-photo.jpg" alt="Diet" style="height: 180px;">
+              <h2>Diet :</h2>
+              <p>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui fugit reiciendis aliquam expedita accusantium iste est officia minima, assumenda ipsum cupiditate ab. Repudiandae numquam adipisci molestiae voluptas laudantium voluptate vero?</p>
+          </div>
+      </div>
+  </div>
+</div>
+<h4 class="plans" >My<span style="color: orange;">&nbsp;Plans</span></h4>
+<div class="prices">
+  <!-- <div class="glass"></div> -->
+<div class="pricing-table" id="services">
+  <div class="pricing-card">
+      <h2>Silver</h2>
+      <p class="price">$10 <span>Yearly</span></p>
+      <ul>
+          <li>1 item</li>
+          <li>1 recommendation</li>
+          <li>1 diet</li>
+      </ul>
+      <button>Get Plan</button>
+  </div>
+  <div class="pricing-card">
+      <h2>Gold</h2>
+      <p class="price">$20 <span>Yearly</span></p>
+      <ul>
+          <li>1 item</li>
+          <li>1 recommendation</li>
+          <li>1 diet</li>
+      </ul>
+      <button>Get Plan</button>
+  </div>
+  <div class="pricing-card">
+      <h2>Platinum</h2>
+      <p class="price">$30 <span>Yearly</span></p>
+      <ul>
+          <li>1 item</li>
+          <li>1 recommendation</li>
+          <li>1 diet</li>
+      </ul>
+      <button>Get Plan</button>
+  </div>
+
+</div>
+</div>
 </body>
 </html>
